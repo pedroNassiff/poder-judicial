@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import { Layout } from 'antd'
+import MenuTop from 'componentes/menuTop'
 
 import './LayoutBasic.scss'
 
@@ -10,7 +11,7 @@ export default function LayoutBasic(props) {
 
     return (
         <Layout>
-            <h2>menu...</h2>
+            <MenuTop />
             <Layout>
                 <Content>
                     <LoadRoutes routes={routes} />
