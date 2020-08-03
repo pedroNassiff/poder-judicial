@@ -1,18 +1,29 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import routes from './config/routes'
+
+import '../src/App.scss';
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" componentes={Home} />
-        <Route exact path="/login" componentes={Login} />
-        <Route exact path="/nueva-cuenta" componentes={NuevaCuenta} />
-        <Route exact path="/institucional" componentes={institucional} />
-        <Route exact path="/nueva-cuenta" componentes={NuevaCuenta} />
+        {routes.map((route, index) => (
+          <RouterWithSubRoutes key={index} {...route} />
+        ))}
       </Switch>
     </Router>
   );
+}
+
+function RouterWithSubRoutes(route) {
+  return (
+    <Route
+      path={route.path}
+      exact={route.exact}
+      render={props => <route.component routes={route.routes} {...props} />}
+    />
+  )
 }
 
 export default App;
