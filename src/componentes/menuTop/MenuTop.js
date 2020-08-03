@@ -1,30 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Layout, Menu } from "antd"
+
+import 'antd/dist/antd.css';
+import { Menu } from 'antd';
+import { SettingOutlined, HomeOutlined, LoginOutlined } from '@ant-design/icons';
 
 import './MenuTop.scss'
+const { SubMenu } = Menu;
 
 export default function MenuTop(props) {
-    const { Sider } = Layout
+    const [current, serCurrent] = useState("Home")
+
+    const handleClick = e => {
+        console.log('click ', e)
+        serCurrent({ current: e.key })
+    }
+
     return (
-        <Sider className="basic-sider" >
-            <Menu theme="dark" mode="inline">
-                <Menu.Item key='1'>
-                    <Link to={"/"}>
-                        <span className="nav-text">Home</span>
-                    </Link>
-                </Menu.Item>
-                <Menu.Item key='2'>
-                    <Link to={"/contact"}>
-                        <span className="nav-text">Menu Web</span>
-                    </Link>
-                </Menu.Item>
-                <Menu.Item key='2'>
-                    <Link to={"/login"}>
-                        <span className="nav-text">Login</span>
-                    </Link>
-                </Menu.Item>
-            </Menu>
-        </Sider>
+        <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
+            <Menu.Item key='1' icon={<HomeOutlined />}  >
+                <Link to={"/"}>
+                    <span className="nav-text">INICIO</span>
+                </Link>
+            </Menu.Item>
+            <SubMenu icon={<SettingOutlined />} title="Navigation Three - Submenu">
+                <Menu.ItemGroup title="Item 1">
+                    <Menu.Item key='2'>
+                        <Link to={"/contact"}>
+                            <span className="nav-text">Contact</span>
+                        </Link>
+                    </Menu.Item>
+                    <Menu.Item key="setting:2">Option 2</Menu.Item>
+                </Menu.ItemGroup>
+            </SubMenu>
+            <Menu.Item key='2' icon={<LoginOutlined />} >
+                <Link to={"/login"}>
+                    <span className="nav-text">Login</span>
+                </Link>
+            </Menu.Item>
+        </Menu>
     )
 }
