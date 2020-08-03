@@ -9,7 +9,7 @@ function App() {
         <Route exact path="/login" componentes={Login} />
         <Route exact path="/nueva-cuenta" componentes={NuevaCuenta} />
         <Route exact path="/institucional" componentes={institucional} />
-        <Route exact path="/nueva-cuenta" componentes={NuevaCuenta} />
+        
       </Switch>
     </Router>
   );
