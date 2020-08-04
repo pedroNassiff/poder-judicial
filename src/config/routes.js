@@ -10,6 +10,7 @@ import Error404 from 'pages/Error404'
 
 //login
 import Login from 'componentes/auth/Login'
+import NuevaCuenta from 'componentes/auth/NuevaCuenta'
 
 
 const routes = [
@@ -31,6 +32,11 @@ const routes = [
             {
                 path: "/login",
                 component: Login,
+                exact: true
+            },
+            {
+                path: "/nueva-cuenta",
+                component: NuevaCuenta,
                 exact: true
             },
             {

@@ -37,6 +37,11 @@ export default function MenuTop(props) {
                     <span className="nav-text">Login</span>
                 </Link>
             </Menu.Item>
+            <Menu.Item key='3' icon={<LoginOutlined />} >
+                <Link to={"/nueva-cuenta"}>
+                    <span className="nav-text">Nueva Cuenta</span>
+                </Link>
+            </Menu.Item>
         </Menu>
     )
 }
