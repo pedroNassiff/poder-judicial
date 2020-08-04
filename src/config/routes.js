@@ -1,5 +1,5 @@
 //Layout
-import LayoutBasic from 'layouts/LayoutBasic'
+import LayoutMain from 'layouts/LayoutMain'
 
 //Pages
 import Home from 'pages/Home'
@@ -15,7 +15,7 @@ import Login from 'componentes/auth/Login'
 const routes = [
     {
         path: "/",
-        component: LayoutBasic,
+        component: LayoutMain,
         exact: false,
         routes: [
             {

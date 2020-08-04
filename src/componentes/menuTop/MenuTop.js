@@ -9,15 +9,14 @@ import './MenuTop.scss'
 const { SubMenu } = Menu;
 
 export default function MenuTop(props) {
-    const [current, serCurrent] = useState("Home")
+    const [current, serCurrent] = useState('1')
 
     const handleClick = e => {
-        console.log('click ', e)
-        serCurrent({ current: e.key })
+        serCurrent(e.key)
     }
 
     return (
-        <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
+        <Menu style={{ position: "fixed", zIndex: 1, width: "100%" }} onClick={handleClick} selectedKeys={[current]} mode="horizontal">
             <Menu.Item key='1' icon={<HomeOutlined />}  >
                 <Link to={"/"}>
                     <span className="nav-text">INICIO</span>
@@ -33,7 +32,7 @@ export default function MenuTop(props) {
                     <Menu.Item key="setting:2">Option 2</Menu.Item>
                 </Menu.ItemGroup>
             </SubMenu>
-            <Menu.Item key='2' icon={<LoginOutlined />} >
+            <Menu.Item key='3' icon={<LoginOutlined />} >
                 <Link to={"/login"}>
                     <span className="nav-text">Login</span>
                 </Link>
