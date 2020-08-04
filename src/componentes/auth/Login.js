@@ -29,7 +29,7 @@ const Login = () => {
             <div className="contenedor-form">
                 <h1>Iniciar Sesión</h1>
                     <form
-                        onSubmit={onSubmit}
+                        
                     >
                         <div className="campo-form">
                             <label htmlFor="email">Email</label>
