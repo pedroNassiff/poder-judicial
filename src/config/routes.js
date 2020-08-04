@@ -1,5 +1,5 @@
 //Layout
-import LayoutBasic from 'layouts/LayoutBasic'
+import LayoutMain from 'layouts/LayoutMain'
 
 //Pages
 import Home from 'pages/Home'
@@ -16,7 +16,7 @@ import NuevaCuenta from 'componentes/auth/NuevaCuenta'
 const routes = [
     {
         path: "/",
-        component: LayoutBasic,
+        component: LayoutMain,
         exact: false,
         routes: [
             {
