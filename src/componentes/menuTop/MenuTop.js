@@ -37,7 +37,7 @@ export default function MenuTop(props) {
                     <span className="nav-text">Login</span>
                 </Link>
             </Menu.Item>
-            <Menu.Item key='3' icon={<LoginOutlined />} >
+            <Menu.Item key='4' icon={<LoginOutlined />} >
                 <Link to={"/nueva-cuenta"}>
                     <span className="nav-text">Nueva Cuenta</span>
                 </Link>
