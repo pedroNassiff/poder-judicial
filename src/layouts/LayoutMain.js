@@ -14,7 +14,7 @@ export default function LayoutBasic(props) {
       <Content>
         <LoadRoutes routes={routes} />
       </Content>
-      <Footer>Somos 404</Footer>
+      <Footer style={{ textAlign: 'center' }}>©2020 Created by Somos 404</Footer>
     </Layout>
   );
 }
