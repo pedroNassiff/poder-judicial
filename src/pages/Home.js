@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Home() {
     return (
-        <div>
+        <div style={{backgroundColor: "red"}}>
             <h1>Estamos en HOME</h1>
         </div>
     )

@@ -12,9 +12,11 @@ export default function LayoutBasic(props) {
     <Layout>
       <MenuTop />
       <Content>
-        <LoadRoutes routes={routes} />
+        <div className="contentLoadRoutes">
+          <LoadRoutes routes={routes} />
+        </div>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>©2020 Created by Somos 404</Footer>
+      <Footer className="footerLayoutMain">©2020 Created by Somos 404</Footer>
     </Layout>
   );
 }

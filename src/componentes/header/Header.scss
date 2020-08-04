@@ -1,3 +1,31 @@
+@import "scss";
+
 .site-page-header {
     border: 1px solid rgb(235, 237, 240);
+    background-color: $primary-color;
+    align-content: center;
+    margin-top: -1.6%;
+}
+
+.pageHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialRedContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2.5vh;
+    padding-right: 2vw;
+}
+.socialRed{
+    padding: 1vh;
+    cursor: pointer;
+}
+.socialRed:hover{
+    background-color: $primary-color-hover;
+}
+.numeroTel{
+    color: white;
 }
