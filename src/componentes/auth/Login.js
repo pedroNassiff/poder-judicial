@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import 'componentes/auth/Login.scss'
+
 const Login = () => {
 
     const [usuario, guardarUsuario] = useState({
@@ -15,12 +16,13 @@ const Login = () => {
             [e.target.name] : e.target.value
         })
 
-        //Cuando el usuario quieren logearse
+    }
 
-        const onSubimit = e => {
-            e.preventDefault();
-        }
+    
+    //Cuando el usuario quieren logearse
 
+    const onSubmit = e => {
+        e.preventDefault();
     }
     return (
         <div className="form-usuario">
