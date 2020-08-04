@@ -1,9 +1,16 @@
 import React from 'react'
+import CardGrid from 'componentes/cardGrid'
+import './Home.scss'
 
 export default function Home() {
     return (
-        <div style={{backgroundColor: "red"}}>
-            <h1>Estamos en HOME</h1>
+        <div>
+            <div>
+                <h1>Carrousel noticias</h1>
+            </div>
+            <div className='cardGrid'>
+                <CardGrid/>
+            </div>
         </div>
     )
 }
