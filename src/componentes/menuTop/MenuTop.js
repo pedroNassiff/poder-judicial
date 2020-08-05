@@ -17,7 +17,6 @@ export default function MenuTop() {
     }
 
     function checkAvailability(arr) {
-        console.log(arr.some(arrVal => current === arrVal));
         return arr.some(arrVal => current === arrVal);
     }
     return (
@@ -30,46 +29,36 @@ export default function MenuTop() {
                     </Link>
                 </Item>
                 <SubMenu className={checkAvailability(["2", "3", "4", "5"]) ? "adtiveColor" : ""} title="INSTITUCIONAL">
-                    <ItemGroup>
-                        <Item key='2'>
-                            <Link to={"/contact"}>
-                                <span className="nav-text">Que es el MPD</span>
-                            </Link>
-                        </Item>
-                        <Item key="3">Que hacemos</Item>
-                        <Item key="4">Donde estamos</Item>
-                        <Item key="5">Organizacion</Item>
-                    </ItemGroup>
+                    <Item key='2'>
+                        <Link to={"/contact"}>
+                            <span className="nav-text">Que es el MPD</span>
+                        </Link>
+                    </Item>
+                    <Item key="3">Que hacemos</Item>
+                    <Item key="4">Donde estamos</Item>
+                    <Item key="5">Organizacion</Item>
                 </SubMenu>
                 <SubMenu className={checkAvailability(["6", "7", "8", "9", "10", "11"]) ? "adtiveColor" : ""} title="ACCIONES">
-                    <ItemGroup>
-                        <Item key="6">Informes</Item>
-                        <Item key="7">Monitoreos</Item>
-                        <Item key="8">Defensoria itinerante</Item>
-                        <Item key="9">Acciones judiciales</Item>
-                        <Item key="10">Convenios</Item>
-                        <Item key="11">Proyecto de Ley</Item>
-                    </ItemGroup>
+                    <Item key="6">Informes</Item>
+                    <Item key="7">Monitoreos</Item>
+                    <Item key="8">Defensoria itinerante</Item>
+                    <Item key="9">Acciones judiciales</Item>
+                    <Item key="10">Convenios</Item>
+                    <Item key="11">Proyecto de Ley</Item>
                 </SubMenu>
                 <SubMenu className={checkAvailability(["12", "13", "14"]) ? "adtiveColor" : ""} title="MIEMBROS">
-                    <ItemGroup>
-                        <Item key="12">Mapa</Item>
-                        <Item key="13">Turnos</Item>
-                        <Item key="14">Intranet</Item>
-                    </ItemGroup>
+                    <Item key="12">Mapa</Item>
+                    <Item key="13">Turnos</Item>
+                    <Item key="14">Intranet</Item>
                 </SubMenu>
                 <SubMenu className={checkAvailability(["15", "16", "17", "18"]) ? "adtiveColor" : ""} title="BIBLIOTECA">
-                    <ItemGroup>
-                        <Item key="15">Reglamentos</Item>
-                        <Item key="16">Resoluciones</Item>
-                        <Item key="17">Leyes</Item>
-                        <Item key="18">Legislaciones</Item>
-                    </ItemGroup>
+                    <Item key="15">Reglamentos</Item>
+                    <Item key="16">Resoluciones</Item>
+                    <Item key="17">Leyes</Item>
+                    <Item key="18">Legislaciones</Item>
                 </SubMenu>
                 <SubMenu className={checkAvailability(["19"]) ? "adtiveColor" : ""} title="SALUD MENTAL">
-                    <ItemGroup>
-                        <Item key="19">ORSM</Item>
-                    </ItemGroup>
+                    <Item key="19">ORSM</Item>
                 </SubMenu>
 
                 <Item key='20'>

@@ -22,7 +22,7 @@
 .ant-menu-item-active:hover {
     background: #1d71b8;
 }
-.ant-menu-item-active:hover{
+.ant-menu-item-active:hover {
     background-color: #1d71b8 !important;
 }
 .ant-menu.ant-menu-dark .ant-menu-item-selected {
@@ -34,7 +34,12 @@
 .adtiveColor {
     background-color: #1d71b8 !important;
 }
+<<<<<<< HEAD
 
 .ant-menu-horizontal {
     line-height: 35px;
+=======
+.ant-menu-horizontal > .ant-menu-submenu > .ant-menu-submenu-title {
+    padding: inherit;
+>>>>>>> dbfca60a45fd6b0572046b8a4e0be6637d066dda
 }
