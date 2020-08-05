@@ -1,8 +1,7 @@
 import React from "react";
 import 'antd/dist/antd.css';
 import './Card.scss';
-import { Card, Avatar } from 'antd';
-import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
+import { Card } from 'antd';
 
 const { Meta } = Card;
 
