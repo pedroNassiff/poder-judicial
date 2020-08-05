@@ -14,6 +14,9 @@ const Header = () => {
   return (
     <PageHeader className="site-page-header">
       <div className="pageContainer">
+        <div className="logoRight">
+          <Avatar shape="circle" className="socialRed" size={45} icon={<img src={`${Logo1}`} alt="content" width="200px" height="auto" />} />
+        </div>
         <div className="HeaderContainer">
           <img src={`${Logo}`} alt="content" width="200px" height="auto" />
         </div>
@@ -26,9 +29,6 @@ const Header = () => {
           <div className="numeroTel">
             <span> +54 0000-0000</span>
           </div>
-        </div>
-        <div className="logoRight">
-          <Avatar shape="circle" className="socialRed" size={45} icon={<img src={`${Logo1}`} alt="content" width="200px" height="auto" />} />
         </div>
       </div>
     </PageHeader>
