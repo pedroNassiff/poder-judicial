@@ -56,11 +56,13 @@
 
   .form-usuario {
     background-color: var(--celeste);
-    height: 100vh;
-    min-height: 800px;
+    height: 74vh;
+    min-height: 780px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 11vh;
     justify-content: center;
+
 }
 
 .contenedor-form {
