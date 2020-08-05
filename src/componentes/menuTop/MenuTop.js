@@ -16,6 +16,10 @@ export default function MenuTop() {
         serCurrent(e.key)
     }
 
+    function checkAvailability(arr) {
+        console.log(arr.some(arrVal => current === arrVal));
+        return arr.some(arrVal => current === arrVal);
+    }
     return (
         <div className="menuTopContainer">
             <Header />
@@ -25,7 +29,7 @@ export default function MenuTop() {
                         <span className="nav-text">INICIO</span>
                     </Link>
                 </Item>
-                <SubMenu icon={<ArrowDownOutlined />} title="INSTITUCIONAL">
+                <SubMenu className={checkAvailability(["2", "3", "4", "5"]) ? "adtiveColor" : ""} icon={<ArrowDownOutlined />} title="INSTITUCIONAL">
                     <ItemGroup>
                         <Item key='2'>
                             <Link to={"/contact"}>
@@ -37,7 +41,7 @@ export default function MenuTop() {
                         <Item key="5">Organizacion</Item>
                     </ItemGroup>
                 </SubMenu>
-                <SubMenu icon={<ArrowDownOutlined />} title="ACCIONES">
+                <SubMenu className={checkAvailability(["6", "7", "8", "9", "10", "11"]) ? "adtiveColor" : ""} icon={<ArrowDownOutlined />} title="ACCIONES">
                     <ItemGroup>
                         <Item key="6">Informes</Item>
                         <Item key="7">Monitoreos</Item>
@@ -47,14 +51,14 @@ export default function MenuTop() {
                         <Item key="11">Proyecto de Ley</Item>
                     </ItemGroup>
                 </SubMenu>
-                <SubMenu icon={<ArrowDownOutlined />} title="MIEMBROS">
+                <SubMenu className={checkAvailability(["12", "13", "14"]) ? "adtiveColor" : ""} icon={<ArrowDownOutlined />} title="MIEMBROS">
                     <ItemGroup>
                         <Item key="12">Mapa</Item>
                         <Item key="13">Turnos</Item>
                         <Item key="14">Intranet</Item>
                     </ItemGroup>
                 </SubMenu>
-                <SubMenu icon={<ArrowDownOutlined />} title="BIBLIOTECA">
+                <SubMenu className={checkAvailability(["15", "16", "17", "18"]) ? "adtiveColor" : ""} icon={<ArrowDownOutlined />} title="BIBLIOTECA">
                     <ItemGroup>
                         <Item key="15">Reglamentos</Item>
                         <Item key="16">Resoluciones</Item>
@@ -62,7 +66,7 @@ export default function MenuTop() {
                         <Item key="18">Legislaciones</Item>
                     </ItemGroup>
                 </SubMenu>
-                <SubMenu icon={<ArrowDownOutlined />} title="SALUD MENTAL">
+                <SubMenu className={checkAvailability(["19"]) ? "adtiveColor" : ""} icon={<ArrowDownOutlined />} title="SALUD MENTAL">
                     <ItemGroup>
                         <Item key="19">ORSM</Item>
                     </ItemGroup>

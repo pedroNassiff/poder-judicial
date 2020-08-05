@@ -22,9 +22,15 @@
 .ant-menu-item-active:hover {
     background: #1d71b8;
 }
+.ant-menu-item-active:hover{
+    background-color: #1d71b8 !important;
+}
 .ant-menu.ant-menu-dark .ant-menu-item-selected {
     background-color: #1d71b8;
 }
-.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected{
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
     background-color: #1d71b8;
+}
+.adtiveColor {
+    background-color: #1d71b8 !important;
 }
