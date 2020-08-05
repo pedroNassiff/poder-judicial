@@ -9,8 +9,7 @@ const CardComponent = (props) => {
   
   const {img, title, description} = props
   return (
-    <Card
-      style={{ width: '99%' }}
+    <Card className="cardContainer"
       cover={
         <img
           
