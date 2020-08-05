@@ -18,6 +18,7 @@ const CarouselNotice = () => {
               img={item.img}
               title={item.title}
               description={item.description}
+              meta={item.meta}
             />
           </div>
         )

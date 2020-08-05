@@ -17,7 +17,6 @@ export default function MenuTop() {
     }
 
     function checkAvailability(arr) {
-        console.log(arr.some(arrVal => current === arrVal));
         return arr.some(arrVal => current === arrVal);
     }
     return (

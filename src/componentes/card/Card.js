@@ -6,22 +6,21 @@ import { Card } from 'antd';
 const { Meta } = Card;
 
 const CardComponent = (props) => {
-  
-  const {img, title, description} = props
+
+  const { img, title, description, meta } = props
   return (
     <Card className="cardContainer"
       cover={
         <img
-          
           alt="example"
-          src={require('../../'+img)} 
+          src={require('../../' + img)}
         />
       }
     >
-      <Meta
+      {meta && <Meta
         title={title}
         description={description}
-      />
+      />}
     </Card>
   );
 };
