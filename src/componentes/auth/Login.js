@@ -27,11 +27,7 @@ const Login = () => {
             <div className="contenedor-form">
                 <h1>Iniciar Sesión</h1>
                     <form
-<<<<<<< HEAD
-                        
-=======
                         /* onSubmit={onSubmit} */
->>>>>>> 17b502a87a7035109360a901742d4fc02685fc76
                     >
                         <div className="campo-form">
                             <label htmlFor="email">Email</label>
