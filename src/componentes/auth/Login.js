@@ -21,9 +21,7 @@ const Login = () => {
     
     //Cuando el usuario quieren logearse
 
-    const onSubmit = e => {
-        e.preventDefault();
-    }
+
     return (
         <div className="form-usuario">
             <div className="contenedor-form">
