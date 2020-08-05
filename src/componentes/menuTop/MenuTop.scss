@@ -15,5 +15,11 @@
     background: #343c46;
 }
 .ant-menu-submenu-active:hover{
-    background: #1890ff;
+    background: #1d71b8;
+}
+.ant-menu-item-active:hover {
+    background: #1d71b8;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected{
+    background: #1d71b8;
 }
