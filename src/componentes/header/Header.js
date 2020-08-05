@@ -1,6 +1,7 @@
 import React from "react";
 import { PageHeader, Avatar } from "antd";
 import Logo from "assets/img/logo4.png";
+import Logo1 from "assets/img/logo.png";
 import {
   FacebookOutlined,
   InstagramOutlined,
@@ -25,6 +26,9 @@ const Header = () => {
           <div className="numeroTel">
             <span> +54 0000-0000</span>
           </div>
+        </div>
+        <div className="logoRight">
+          <Avatar shape="circle" className="socialRed" size={45} icon={<img src={`${Logo1}`} alt="content" width="200px" height="auto" />} />
         </div>
       </div>
     </PageHeader>
