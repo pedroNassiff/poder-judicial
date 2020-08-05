@@ -39,6 +39,7 @@ const routes = [
                 component: NuevaCuenta,
                 exact: true
             },
+            
             {
                 component: Error404
             }
