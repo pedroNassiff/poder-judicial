@@ -17,9 +17,9 @@ export default function MenuTop(props) {
     }
 
     return (
-        <div style={{ position: "fixed", zIndex: 1, width: "100%" }}>
+        <div className="menuTopContainer">
             <Header />
-            <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
+            <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal" theme={"dark"}>
                 <Item key='1' icon={<HomeOutlined />}  >
                     <Link to={"/"}>
                         <span className="nav-text">INICIO</span>
