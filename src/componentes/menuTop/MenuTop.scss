@@ -6,6 +6,14 @@
 .menuTopLeft {
     float: right;
 }
-.ant-menu .ant-menu-light .ant-menu-root .ant-menu-horizontal{
-
+.ant-menu.ant-menu-dark{
+    color: rgb(255, 255, 255);
+    background: #343c46;
+}
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub{
+    color: rgb(255, 255, 255);
+    background: #343c46;
+}
+.ant-menu-submenu:hover{
+    background: #1890ff;
 }
