@@ -5,11 +5,11 @@ import './Home.scss'
 
 export default function Home() {
     return (
-        <div>
-            <div>
+        <div className="homeContainer">
+            <div className="carouselContainer">
                 <Carousel/>
             </div>
-            <div className='cardGrid'>
+            <div className='cardGridContainer'>
                 <CardGrid/>
             </div>
         </div>
