@@ -9,7 +9,7 @@ import Header from "componentes/header"
 import './MenuTop.scss'
 const { SubMenu, Item, ItemGroup } = Menu;
 
-export default function MenuTop(props) {
+export default function MenuTop() {
     const [current, serCurrent] = useState('1')
 
     const handleClick = e => {
