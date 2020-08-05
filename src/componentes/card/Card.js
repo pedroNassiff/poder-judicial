@@ -19,16 +19,8 @@ const CardComponent = (props) => {
           src={require('../../'+img)} 
         />
       }
-      actions={[
-        <SettingOutlined key="setting" />,
-        <EditOutlined key="edit" />,
-        <EllipsisOutlined key="ellipsis" />,
-      ]}
     >
       <Meta
-        avatar={
-          <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-        }
         title={title}
         description={description}
       />
