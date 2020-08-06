@@ -1,5 +1,7 @@
 .carouselContainer {
-    width: 99vw;
+    display: flex;
+    align-items:center;
+    width:98vw;
 }
 .carousel {
     width: 100%;
@@ -8,15 +10,13 @@
 .carousel:hover + .iconContainer > .iconCarousel{
         background: #00a1dca4;
 }
-
 .iconContainer {
     display: flex;
     justify-content: space-between;
+    vertical-align: middle;
+    width: 100%;
     z-index: 9;
-    padding: 1vh;
-    padding-right: 3vh;
-    margin-top: -25%;
-    margin-bottom: 25%;
+    position: absolute;
     cursor: pointer;
 }
 .iconCarousel{
