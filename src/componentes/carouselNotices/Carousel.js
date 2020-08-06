@@ -31,10 +31,10 @@ const CarouselNotice = () => {
       autoplay
       dots={false}
       infinite={true}
-      slidesToShow={3}
+      slidesToShow={2}
       slidesToScroll={1}
       speed={2000}
-      autoplaySpeed={2000}
+      autoplaySpeed={4000}
     >
     {cards}  
     </Carousel>

@@ -3,13 +3,16 @@ import { Link } from 'react-router-dom'
 
 import 'antd/dist/antd.css';
 import { Menu } from 'antd';
-import { ArrowDownOutlined, HomeOutlined, LoginOutlined } from '@ant-design/icons';
+import { LoginOutlined, LogoutOutlined } from '@ant-design/icons';
 import Header from "componentes/header"
-
+import Api from 'services/AuthService'
 import './MenuTop.scss'
-const { SubMenu, Item, ItemGroup } = Menu;
+const { SubMenu, Item } = Menu;
+
+const user = JSON.parse(localStorage.getItem("user"));
 
 export default function MenuTop() {
+
     const [current, serCurrent] = useState('1')
 
     const handleClick = e => {
@@ -19,6 +22,7 @@ export default function MenuTop() {
     function checkAvailability(arr) {
         return arr.some(arrVal => current === arrVal);
     }
+
     return (
         <div className="menuTopContainer">
             <Header />
@@ -66,17 +70,33 @@ export default function MenuTop() {
                         <span className="nav-text">CONTACTO</span>
                     </Link>
                 </Item>
-
-                <Item key='21' icon={<LoginOutlined />} className="menuTopLeft" >
-                    <Link to={"/nueva-cuenta"}>
-                        <span className="nav-text">Registrar</span>
-                    </Link>
-                </Item>
-                <Item key='22' icon={<LoginOutlined />} className="menuTopLeft">
-                    <Link to={"/login"}>
-                        <span className="nav-text">Login</span>
-                    </Link>
-                </Item>
+                {
+                    user && user.roles.some(
+                        (role) => role === "ROLE_ADMIN" || role === "ROLE_MODERATOR"
+                    )
+                    &&
+                    <Item key='21' icon={<LoginOutlined />} className="menuTopLeft" >
+                        <Link to={"/nueva-cuenta"}>
+                            <span className="nav-text">Registrar</span>
+                        </Link>
+                    </Item>
+                }
+                {
+                    !user &&
+                    <Item key='22' icon={<LoginOutlined />} className="menuTopLeft">
+                        <Link to={"/login"}>
+                            <span className="nav-text">Login</span>
+                        </Link>
+                    </Item>
+                }
+                {
+                    user &&
+                    <Item key='22' icon={<LogoutOutlined />} className="menuTopLeft">
+                        <Link to={"/"} onClick={() => Api.logout()} >
+                            <span className="nav-text">Salir</span>
+                        </Link>
+                    </Item>
+                }
             </Menu>
         </div>
     )

@@ -2,10 +2,10 @@ import axios from "axios"
 import API_URL from "config/apiUrl"
 
 class AuthService {
-  login(username, password) {
+  login(email, password) {
     return axios
       .post(API_URL + "auth/signin", {
-        username,
+        email,
         password
       })
       .then(response => {
@@ -22,6 +22,7 @@ class AuthService {
   logout() {
     localStorage.removeItem("user");
     localStorage.removeItem("userfecha");
+    window.location.reload();
   }
 
   register(username, email, password) {

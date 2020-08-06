@@ -1,7 +1,6 @@
 import React from 'react';
 import 'antd/dist/antd.css';
 import { Row, Col } from 'antd';
-import Card from '../card'
 import DummyDataGrid from 'dummyData/dummyDataGrid'
 
 const ComponentName = () => {
