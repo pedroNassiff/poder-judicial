@@ -1,7 +1,6 @@
 import React from 'react';
 import 'antd/dist/antd.css';
 import { Row, Col, Avatar } from 'antd';
-import DummyDataGrid from 'dummyData/dummyDataGrid'
 import {
   PhoneOutlined,
 } from "@ant-design/icons";

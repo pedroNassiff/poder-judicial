@@ -59,17 +59,9 @@ body{
       width: 100%;
   }
   
-  .gallery .info h2 a{
+  .gallery .info h2 span{
     color: #fff;
     display: block;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-    text-decoration:none;
-  }
-
-  .gallery .info h1 a{
-    color: #fff;
-    display: block;
-    font-size: 1.9vh;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
     text-decoration:none;
   }

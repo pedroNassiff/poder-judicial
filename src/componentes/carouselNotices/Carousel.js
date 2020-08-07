@@ -20,9 +20,8 @@ const CarouselNotice = () => {
     setCards(
       DummyData.map(
         (item, i) => (
-          <div>
+          <div key={i}>
             <Card
-              key={i}
               img={item.img}
               title={item.title}
               description={item.description}
