@@ -14,8 +14,10 @@ import Informes from 'pages/acciones/informes'
 import Monitoreos from 'pages/acciones/monitoreos'
 import ProyectoDeLey from 'pages/acciones/proyectoDeLey'
 //biblioteca
-
-
+import Legislaciones from 'pages/biblioteca/legislaciones'
+import Leyes from 'pages/biblioteca/leyes'
+import Reglamentos from 'pages/biblioteca/reglamentos'
+import Resoluciones from 'pages/biblioteca/resoluciones'
 //institucional
 
 //miembros
@@ -32,6 +34,37 @@ import NuevaCuenta from 'componentes/auth/NuevaCuenta'
 
 
 const routes = [
+    {
+        path: "/biblioteca",
+        component: LayoutMain,
+        exact: false,
+        routes: [
+            {
+                path: "/biblioteca/legislaciones",
+                component: Legislaciones,
+                exact: true
+            },
+            {
+                path: "/biblioteca/leyes",
+                component: Leyes,
+                exact: true
+            },
+            {
+                path: "/biblioteca/reglamentos",
+                component: Reglamentos,
+                exact: true
+            },
+            {
+                path: "/biblioteca/resoluciones",
+                component: Resoluciones,
+                exact: true
+            },
+            {
+                component: Error404
+            }
+        ]
+
+    },
     {
         path: "/acciones",
         component: LayoutMain,
