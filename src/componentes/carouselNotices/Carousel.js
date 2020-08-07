@@ -8,6 +8,7 @@ import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 
 const CarouselNotice = () => {
   const [cards, setCards] = useState();
+  const [toShow, setToShow] = useState(window.innerWidth <= 600?1:2);
 
   const carousel = createRef();
 
@@ -31,8 +32,17 @@ const CarouselNotice = () => {
         )
       )
     );
-  }, []);
 
+    function handleResize() {
+      setToShow(window.innerWidth >= 800 ?2:1)
+    }
+    window.addEventListener('resize', handleResize)
+
+    return _ => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, []);
+  
   return (
     <div className="carouselContainer">
       <div className="carousel">
@@ -40,7 +50,7 @@ const CarouselNotice = () => {
           autoplay
           dots={false}
           infinite={true}
-          slidesToShow={2}
+          slidesToShow={toShow}
           slidesToScroll={1}
           speed={2000}
           autoplaySpeed={4000}
