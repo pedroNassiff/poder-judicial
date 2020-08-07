@@ -11,13 +11,19 @@ import Error404 from 'pages/Error404'
 //login
 import Login from 'componentes/auth/Login'
 import NuevaCuenta from 'componentes/auth/NuevaCuenta'
-import Acciones from 'config/routes.acciones'
-import Biblioteca from 'config/route.biblioteca'
-
+//routes.algo.js
+import Acciones from 'config/acciones.routes'
+import Biblioteca from 'config/biblioteca.routes'
+import Institucional from 'config/institucional.routes'
+import Mienbros from 'config/mienbros.routes'
+import saludMental from 'config/saludMental.routes'
 
 const routes = [
     Acciones,
     Biblioteca,
+    Institucional,
+    Mienbros,
+    saludMental,
     {
         path: "/",
         component: LayoutMain,
