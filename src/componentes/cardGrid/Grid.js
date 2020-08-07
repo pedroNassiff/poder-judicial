@@ -1,31 +1,44 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import { Row, Col } from 'antd';
+import { Row, Col, Avatar } from 'antd';
 import DummyDataGrid from 'dummyData/dummyDataGrid'
+import {
+  PhoneOutlined,
+} from "@ant-design/icons";
+import './Grid.scss'
 
 const ComponentName = () => {
   return (
     <Row justify="center">
       <Col span={8} xs={{ order: 1 }} sm={{ order: 2 }} md={{ order: 3 }} lg={{ order: 4 }}>
-        <img style={{cursor: 'pointer'}}
-          width="98%"
-          alt="example"
-          src={require('../../' + DummyDataGrid[0].img)}
-        />
+      <div className="bottomContainer" style={{ cursor: 'pointer' }}>
+          <div>
+            <span>Penales Resistencia / Penales Interior</span>
+          </div>
+          <div>
+            <Avatar shape="circle" className="socialPhone" size={45} icon={<PhoneOutlined />} />
+          </div>
+        </div>
       </Col>
       <Col span={8} xs={{ order: 2 }} sm={{ order: 1 }} md={{ order: 4 }} lg={{ order: 3 }}>
-        <img style={{cursor: 'pointer'}}
-          width="98%"
-          alt="example"
-          src={require('../../' + DummyDataGrid[1].img)}
-        />
+      <div className="bottomContainer" style={{ cursor: 'pointer' }}>
+          <div>
+            <span>Defensorías Públicas Civiles</span>
+          </div>
+          <div>
+            <Avatar shape="circle" className="socialPhone" size={45} icon={<PhoneOutlined />} />
+          </div>
+        </div>
       </Col>
       <Col span={8} xs={{ order: 3 }} sm={{ order: 4 }} md={{ order: 2 }} lg={{ order: 1 }}>
-        <img style={{cursor: 'pointer'}}
-          width="98%"
-          alt="example"
-          src={require('../../' + DummyDataGrid[2].img)}
-        />
+        <div className="bottomContainer" style={{ cursor: 'pointer' }}>
+          <div>
+            <span>Asesorias de Ninas, Niños y Adolescentes</span>
+          </div>
+          <div className="phoneContainer">
+            <Avatar shape="circle" className="socialPhone" size={45} icon={<PhoneOutlined />} />
+          </div>
+        </div>
       </Col>
     </Row>
   );
