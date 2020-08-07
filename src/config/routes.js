@@ -16,8 +16,8 @@ import Biblioteca from 'config/route.biblioteca'
 
 
 const routes = [
-    Biblioteca,
     Acciones,
+    Biblioteca,
     {
         path: "/",
         component: LayoutMain,
