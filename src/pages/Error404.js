@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Erro404() {
     return (
-        <div style={{backgroundColor: "green"}}>
+        <div style={{backgroundColor: "green", display:'flex', alignItems:"center", justifyContent: "center", justifyItems:"center"}}>
             <h2>
                 Error 404...
             </h2>
