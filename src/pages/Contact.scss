@@ -1,4 +1,4 @@
-.contactContainer {
+/* .contactContainer {
     background-color: #343c46b6;
 }
 .imagenMuestra{
@@ -9,4 +9,34 @@
     background-image: url("../assets/img/contact.png");
     background-position: center;
     background-repeat: no-repeat;
+} */
+.formContactoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.fromContacto{
+    display: flex;
+    padding: 1vh;
+    flex-direction: column;
+    width: 70%;
+    padding-right: 10%;
+}
+.fromCatactoImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.fromContactoInputs{
+    display: flex;
+    flex-direction: row;
+}
+.fromContactoInput{
+    height: 4vh;
+    margin: 1vh;
+}
+.selectButton5{
+    margin: 1vh;
 }

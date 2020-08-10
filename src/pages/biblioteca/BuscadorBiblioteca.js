@@ -20,9 +20,8 @@ const BuscadorBiblioteca = () => {
             <div className="SearchContainer">
                 <Input
                     className='searchInput'
-                    type="password"
-                    id="password"
-                    name="password"
+                    type="text"
+                    name="mensaje"
                     placeholder="Que buscas?"
                 />
                 <Button className='selectButton5'>Buscar</Button>
