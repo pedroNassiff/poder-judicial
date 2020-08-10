@@ -2,7 +2,11 @@ import React from 'react';
 
 const DefensoriaItinerante = () => {
     return (
-        'DefensoriaItinerante'
+        <div className="mainContainer">
+        <div className="titleContainer">
+            <h1>DefensoriaItinerante</h1>
+        </div>
+    </div>
     );
 };
 

@@ -2,7 +2,11 @@ import React from 'react';
 
 const Monitoreos = () => {
     return (
-        'monitoreos'
+        <div className="mainContainer">
+        <div className="titleContainer">
+            <h1>monitoreos</h1>
+        </div>
+    </div>
     );
 };
 

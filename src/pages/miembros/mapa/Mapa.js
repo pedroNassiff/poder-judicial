@@ -2,7 +2,11 @@ import React from 'react';
 
 const Mapas = () => {
     return (
-        'Mapas'
+        <div className="mainContainer">
+        <div className="titleContainer">
+            <h1>Mapas</h1>
+        </div>
+    </div>
     );
 };
 

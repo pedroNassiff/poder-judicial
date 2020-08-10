@@ -2,7 +2,11 @@ import React from 'react';
 
 const MPD = () => {
     return (
-       'mpd' 
+        <div className="mainContainer">
+        <div className="titleContainer">
+            <h1>mpd</h1>
+        </div>
+    </div>
     );
 };
 

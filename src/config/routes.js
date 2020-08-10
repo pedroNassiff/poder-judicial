@@ -4,6 +4,7 @@ import LayoutMain from 'layouts/LayoutMain'
 //Pages
 import Home from 'pages/Home'
 import Contact from 'pages/Contact'
+import biblioteca from 'pages/biblioteca'
 
 //Other
 import Error404 from 'pages/Error404'
@@ -13,14 +14,12 @@ import Login from 'componentes/auth/Login'
 import NuevaCuenta from 'componentes/auth/NuevaCuenta'
 //routes.algo.js
 import Acciones from 'config/acciones.routes'
-import Biblioteca from 'config/biblioteca.routes'
 import Institucional from 'config/institucional.routes'
 import Mienbros from 'config/mienbros.routes'
 import saludMental from 'config/saludMental.routes'
 
 const routes = [
     Acciones,
-    Biblioteca,
     Institucional,
     Mienbros,
     saludMental,
@@ -37,6 +36,11 @@ const routes = [
             {
                 path: "/contact",
                 component: Contact,
+                exact: true
+            },
+            {
+                path: "/biblioteca",
+                component: biblioteca,
                 exact: true
             },
             {

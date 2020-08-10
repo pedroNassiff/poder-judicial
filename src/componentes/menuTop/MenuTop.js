@@ -33,36 +33,59 @@ export default function MenuTop() {
                     </Link>
                 </Item>
                 <SubMenu className={checkAvailability(["2", "3", "4", "5"]) ? "adtiveColor" : ""} title="INSTITUCIONAL">
-                    <Item key='2'>
-                        <Link to={"/contact"}>
-                            <span className="nav-text">Que es el MPD</span>
-                        </Link>
+                    <Item key='2'>Que es el MPD
+                        <Link to={"/institucional/mpd"}/>
                     </Item>
-                    <Item key="3">Que hacemos</Item>
-                    <Item key="4">Donde estamos</Item>
-                    <Item key="5">Organizacion</Item>
+                    <Item key="3">Que hacemos
+                        <Link to={"/institucional/queHacemos"}/>
+                    </Item>
+                    <Item key="4">Donde estamos
+                        <Link to={"/institucional/dondeEstamos"}/>
+                    </Item>
+                    <Item key="5">Organizacion
+                        <Link to={"/institucional/organizacion"}/>
+                    </Item>
                 </SubMenu>
                 <SubMenu className={checkAvailability(["6", "7", "8", "9", "10", "11"]) ? "adtiveColor" : ""} title="ACCIONES">
-                    <Item key="6">Informes</Item>
-                    <Item key="7">Monitoreos</Item>
-                    <Item key="8">Defensoria itinerante</Item>
-                    <Item key="9">Acciones judiciales</Item>
-                    <Item key="10">Convenios</Item>
-                    <Item key="11">Proyecto de Ley</Item>
+                    <Item key="6">Informes
+                        <Link to={"/acciones/informes"}/>
+                    </Item>
+                    <Item key="7">Monitoreos
+                        <Link to={"/acciones/monitoreos"}/>
+                    </Item>
+                    <Item key="8">Defensoria itinerante
+                        <Link to={"/acciones/defensoriaItinerante"}/>
+                    </Item>
+                    <Item key="9">Acciones judiciales
+                        <Link to={"/acciones/accionesJudiciales"}/>
+                    </Item>
+                    <Item key="10">Convenios
+                        <Link to={"/acciones/convenios"}/>
+                    </Item>
+                    <Item key="11">Proyecto de Ley
+                        <Link to={"/acciones/proyectoDeLey"}/>
+                    </Item>
                 </SubMenu>
                 <SubMenu className={checkAvailability(["12", "13", "14"]) ? "adtiveColor" : ""} title="MIEMBROS">
-                    <Item key="12">Mapa</Item>
-                    <Item key="13">Turnos</Item>
-                    <Item key="14">Intranet</Item>
+                    <Item key="12">Mapa
+                        <Link to={"/miembros/mapa"}/>
+                    </Item>
+                    <Item key="13">Turnos
+                        <Link to={"/miembros/turnos"}/>
+                    </Item>
+                    <Item key="14">Intranet
+                        <Link to={"/miembros/intranet"}/>
+                    </Item>
                 </SubMenu>
-                <SubMenu className={checkAvailability(["15", "16", "17", "18"]) ? "adtiveColor" : ""} title="BIBLIOTECA">
-                    <Item key="15">Reglamentos</Item>
-                    <Item key="16">Resoluciones</Item>
-                    <Item key="17">Leyes</Item>
-                    <Item key="18">Legislaciones</Item>
-                </SubMenu>
+                <Item key='15'>
+                    <Link to={"/biblioteca"}>
+                        <span className="nav-text">BIBLIOTECA</span>
+                    </Link>
+                </Item>
                 <SubMenu className={checkAvailability(["19"]) ? "adtiveColor" : ""} title="SALUD MENTAL">
-                    <Item key="19">ORSM</Item>
+                    <Item key="19">ORSM
+                        <Link to={"/saludMental/orsm"}/>
+                    </Item>
                 </SubMenu>
 
                 <Item key='20'>

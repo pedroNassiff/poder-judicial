@@ -2,7 +2,11 @@ import React from 'react';
 
 const DondeEstamos = () => {
     return (
-        'Donde Estamos'
+        <div className="mainContainer">
+        <div className="titleContainer">
+            <h1>Donde Estamos</h1>
+        </div>
+    </div>
     );
 };
 
