@@ -10,6 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
 } */
+
 .formContactoContainer{
     display: flex;
     justify-content: center;
@@ -21,7 +22,7 @@
     padding: 1vh;
     flex-direction: column;
     width: 70%;
-    padding-right: 10%;
+    /* padding-right: 10%; */
 }
 .fromCatactoImg{
     display: flex;
@@ -32,6 +33,7 @@
 .fromContactoInputs{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .fromContactoInput{
     height: 4vh;
@@ -39,4 +41,5 @@
 }
 .selectButton5{
     margin: 1vh;
+    width: 12vw;
 }

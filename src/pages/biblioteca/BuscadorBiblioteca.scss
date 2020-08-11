@@ -1,5 +1,5 @@
 .bibliotecaContainer {
-    background-color: rgb(0, 160, 220);
+    background-color: rgba(235, 237, 239, 1);
     padding-top: 10vh;
 }
 .titleContainer{
@@ -72,6 +72,14 @@
 }
 
 .resultContainer{
-    min-height: 55vh;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90%;
+    flex-direction: column;
+}
+.site-card-border-less-wrapper{
+    width: 100%;
+    padding: 1vh;
+    padding-bottom: 1vh;
 }

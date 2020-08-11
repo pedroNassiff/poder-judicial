@@ -19,9 +19,9 @@ export default function Contact() {
                 </span>
             </div>
             <div className="formContactoContainer">
-                <div className="fromCatactoImg">
+               {/*  <div className="fromCatactoImg">
                     <img src={require("assets/img/sendemail.png")} alt="content" width="200px" height="auto" />
-                </div>
+                </div> */}
                 <div className="fromContacto">
                     <div className="fromContactoInputs">
                         <Input
@@ -51,7 +51,7 @@ export default function Contact() {
                             prefix={<FileTextOutlined />}
                         />
                     </div>
-                    <div>
+                    <div className="fromContactoInputs">
                         <Button className='selectButton5'>Enviar</Button>
                     </div>
                 </div>
