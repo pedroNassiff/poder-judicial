@@ -7,7 +7,7 @@ import { LoginOutlined, LogoutOutlined } from '@ant-design/icons';
 import Header from "componentes/header"
 import Api from 'services/AuthService'
 import './MenuTop.scss'
-const { SubMenu, Item } = Menu;
+const { SubMenu, Item, ItemGroup } = Menu;
 
 const user = JSON.parse(localStorage.getItem("user"));
 
@@ -33,49 +33,55 @@ export default function MenuTop() {
                     </Link>
                 </Item>
                 <SubMenu className={checkAvailability(["2", "3", "4", "5"]) ? "adtiveColor" : ""} title="INSTITUCIONAL">
-                    <Item key='2'>Que es el MPD
-                        <Link to={"/institucional/mpd"}/>
-                    </Item>
-                    <Item key="3">Que hacemos
-                        <Link to={"/institucional/queHacemos"}/>
-                    </Item>
-                    <Item key="4">Donde estamos
-                        <Link to={"/institucional/dondeEstamos"}/>
-                    </Item>
-                    <Item key="5">Organizacion
-                        <Link to={"/institucional/organizacion"}/>
-                    </Item>
+                    <ItemGroup >
+                        <Item key='2'>Que es el MPD
+                        <Link to={"/institucional/mpd"} />
+                        </Item>
+                        <Item key="3">Que hacemos
+                        <Link to={"/institucional/queHacemos"} />
+                        </Item>
+                        <Item key="4">Donde estamos
+                        <Link to={"/institucional/dondeEstamos"} />
+                        </Item>
+                        <Item key="5">Organizacion
+                        <Link to={"/institucional/organizacion"} />
+                        </Item>
+                    </ItemGroup>
                 </SubMenu>
                 <SubMenu className={checkAvailability(["6", "7", "8", "9", "10", "11"]) ? "adtiveColor" : ""} title="ACCIONES">
-                    <Item key="6">Informes
-                        <Link to={"/acciones/informes"}/>
-                    </Item>
-                    <Item key="7">Monitoreos
-                        <Link to={"/acciones/monitoreos"}/>
-                    </Item>
-                    <Item key="8">Defensoria itinerante
-                        <Link to={"/acciones/defensoriaItinerante"}/>
-                    </Item>
-                    <Item key="9">Acciones judiciales
-                        <Link to={"/acciones/accionesJudiciales"}/>
-                    </Item>
-                    <Item key="10">Convenios
-                        <Link to={"/acciones/convenios"}/>
-                    </Item>
-                    <Item key="11">Proyecto de Ley
-                        <Link to={"/acciones/proyectoDeLey"}/>
-                    </Item>
+                    <ItemGroup >
+                        <Item key="6">Informes
+                        <Link to={"/acciones/informes"} />
+                        </Item>
+                        <Item key="7">Monitoreos
+                        <Link to={"/acciones/monitoreos"} />
+                        </Item>
+                        <Item key="8">Defensoria itinerante
+                        <Link to={"/acciones/defensoriaItinerante"} />
+                        </Item>
+                        <Item key="9">Acciones judiciales
+                        <Link to={"/acciones/accionesJudiciales"} />
+                        </Item>
+                        <Item key="10">Convenios
+                        <Link to={"/acciones/convenios"} />
+                        </Item>
+                        <Item key="11">Proyecto de Ley
+                        <Link to={"/acciones/proyectoDeLey"} />
+                        </Item>
+                    </ItemGroup>
                 </SubMenu>
                 <SubMenu className={checkAvailability(["12", "13", "14"]) ? "adtiveColor" : ""} title="MIEMBROS">
-                    <Item key="12">Mapa
-                        <Link to={"/miembros/mapa"}/>
-                    </Item>
-                    <Item key="13">Turnos
-                        <Link to={"/miembros/turnos"}/>
-                    </Item>
-                    <Item key="14">Intranet
-                        <Link to={"/miembros/intranet"}/>
-                    </Item>
+                    <ItemGroup >
+                        <Item key="12">Mapa
+                        <Link to={"/miembros/mapa"} />
+                        </Item>
+                        <Item key="13">Turnos
+                        <Link to={"/miembros/turnos"} />
+                        </Item>
+                        <Item key="14">Intranet
+                        <Link to={"/miembros/intranet"} />
+                        </Item>
+                    </ItemGroup>
                 </SubMenu>
                 <Item key='15'>
                     <Link to={"/biblioteca"}>
@@ -83,9 +89,11 @@ export default function MenuTop() {
                     </Link>
                 </Item>
                 <SubMenu className={checkAvailability(["19"]) ? "adtiveColor" : ""} title="SALUD MENTAL">
-                    <Item key="19">ORSM
-                        <Link to={"/saludMental/orsm"}/>
-                    </Item>
+                    <ItemGroup >
+                        <Item key="19">ORSM
+                        <Link to={"/saludMental/orsm"} />
+                        </Item>
+                    </ItemGroup>
                 </SubMenu>
 
                 <Item key='20'>

@@ -12,12 +12,15 @@
 .pageContainer{
     display: flex;
     flex-direction: row; 
+    min-height: 16vh;
 }
 .HeaderContainer {
     width: 20%;
     min-width:200px ;
     margin-right: 0.25vw;
     background-color:#00a0dc;
+    display: flex;
+    align-items: center;
 }
 .socialRedContainer {
     display: flex;

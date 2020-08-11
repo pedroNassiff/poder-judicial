@@ -17,25 +17,26 @@
 .ant-menu-dark .ant-menu-sub,
 .ant-menu.ant-menu-dark .ant-menu-sub {
     color: rgb(255, 255, 255);
-    background: #1890ff;
+    background: #1d71b8;
+   
 }
 .ant-menu-submenu-active:hover {
-    background: #1d71b8;
+    background: #1890ff;
 }
 .ant-menu-item-active:hover {
-    background: #1d71b8;
+    background: #1890ff;
 }
 .ant-menu-item-active:hover {
-    background-color: #1d71b8 !important;
+    background-color: #1890ff !important;
 }
 .ant-menu.ant-menu-dark .ant-menu-item-selected {
-    background-color: #1d71b8;
+    background-color: #1890ff;
 }
 .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
-    background-color: #1d71b8;
+    background-color: #1890ff;
 }
 .adtiveColor {
-    background-color: #1d71b8 !important;
+    background-color: #1890ff !important;
 }
 .ant-menu-horizontal > .ant-menu-submenu > .ant-menu-submenu-title {
     padding: inherit;
@@ -43,7 +44,7 @@
 
 .ant-menu-submenu-active .ant-menu-submenu-title{
     color: rgb(255, 255, 255);
-    background-color: #1d71b8
+    background-color: #1890ff
 }
 .nav-text{
     color: rgb(255, 255, 255);

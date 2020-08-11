@@ -52,7 +52,7 @@ export default function Contact() {
                         />
                     </div>
                     <div>
-                        <Button className='selectButton5'>Emviar</Button>
+                        <Button className='selectButton5'>Enviar</Button>
                     </div>
                 </div>
             </div>

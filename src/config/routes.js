@@ -19,15 +19,15 @@ import Mienbros from 'config/mienbros.routes'
 import saludMental from 'config/saludMental.routes'
 
 const routes = [
-    Acciones,
-    Institucional,
-    Mienbros,
-    saludMental,
     {
         path: "/",
         component: LayoutMain,
         exact: false,
         routes: [
+            ...Acciones,
+            ...Institucional,
+            ...Mienbros,
+            ...saludMental,
             {
                 path: "/",
                 component: Home,
