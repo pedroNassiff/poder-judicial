@@ -14,6 +14,10 @@
     flex-direction: row; 
     min-height: 16vh;
 }
+.headerResponsive{
+    display: flex;
+    flex-direction: row;
+}
 .HeaderContainer {
     width: 20%;
     min-width:200px ;
@@ -49,4 +53,32 @@
     align-items: center;
     background-color: #00a0dc;
     padding-left: 1vw;
+}
+
+@media (max-device-width: 480px){
+    .pageContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .headerResponsive{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+    .logoRight{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .HeaderContainer {
+        display: flex;
+        align-items: center;
+    }
+    .socialRedContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
 }
