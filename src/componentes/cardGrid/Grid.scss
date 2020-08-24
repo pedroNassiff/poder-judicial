@@ -1,22 +1,35 @@
-.bottomContainer{
+.bottomContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     flex-direction: row;
-    height: 10vh;
+    height: 99%;
     width: 98%;
     color: white;
     font-weight: bold;
     background: #1d71b8;
     border-radius: 0.3vh;
     padding: 2vh;
+    margin: 1vh;
 }
 
-.socialPhone{
+.socialPhone {
     display: flex;
     align-items: center;
     justify-content: center;
     background: white;
     color: black;
+}
+.preFooterContainer {
+    display: flex;
+    flex-direction: row;
+    height: 12vh;
+}
+
+@media (max-device-width: 800px) {
+    .preFooterContainer {
+        flex-direction: column;
+        height: 40vh;
+    }
 }

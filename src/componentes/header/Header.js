@@ -14,11 +14,13 @@ const Header = () => {
   return (
     <PageHeader className="site-page-header">
       <div className="pageContainer">
-        <div className="logoRight">
-          <Avatar shape="circle" className="socialRed" size={45} icon={<img src={`${Logo1}`} alt="content" width="200px" height="auto" />} />
-        </div>
-        <div className="HeaderContainer">
-          <img src={`${Logo}`} alt="content" width="200px" height="auto" />
+        <div className="headerResponsive">
+          <div className="logoRight">
+            <Avatar shape="circle" className="socialRed" size={45} icon={<img src={`${Logo1}`} alt="content" width="200px" height="auto" />} />
+          </div>
+          <div className="HeaderContainer">
+            <img src={`${Logo}`} alt="content" width="200px" height="auto" />
+          </div>
         </div>
         <div className="socialRedContainer">
           <div>
