@@ -7,6 +7,8 @@ import { LoginOutlined, LogoutOutlined } from '@ant-design/icons';
 import Header from "componentes/header"
 import Api from 'services/AuthService'
 import './MenuTop.scss'
+import { Divider } from 'antd';
+
 const { SubMenu, Item, ItemGroup } = Menu;
 
 const user = JSON.parse(localStorage.getItem("user"));
@@ -24,14 +26,17 @@ export default function MenuTop() {
     }
 
     return (
+
         <div className="menuTopContainer">
             <Header />
             <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal" theme={"dark"}>
                 <Item key='1' >
+              
                     <Link to={"/"}>
-                        <span className="nav-text">INICIO</span>
+                        <span className="nav-text">INICIO </span>
                     </Link>
                 </Item>
+                <Divider type="vertical" />
                 <SubMenu className={checkAvailability(["2", "3", "4", "5"]) ? "adtiveColor" : ""} title="INSTITUCIONAL">
                     <ItemGroup >
                         <Item key='2'>Que es el MPD
@@ -48,6 +53,7 @@ export default function MenuTop() {
                         </Item>
                     </ItemGroup>
                 </SubMenu>
+                <Divider type="vertical" />
                 <SubMenu className={checkAvailability(["6", "7", "8", "9", "10", "11"]) ? "adtiveColor" : ""} title="ACCIONES">
                     <ItemGroup >
                         <Item key="6">Informes
@@ -70,6 +76,7 @@ export default function MenuTop() {
                         </Item>
                     </ItemGroup>
                 </SubMenu>
+                <Divider type="vertical" />
                 <SubMenu className={checkAvailability(["12", "13", "14"]) ? "adtiveColor" : ""} title="MIEMBROS">
                     <ItemGroup >
                         <Item key="12">Mapa
@@ -83,11 +90,13 @@ export default function MenuTop() {
                         </Item>
                     </ItemGroup>
                 </SubMenu>
+                <Divider type="vertical" />
                 <Item key='15'>
                     <Link to={"/biblioteca"}>
                         <span className="nav-text">BIBLIOTECA</span>
                     </Link>
                 </Item>
+                <Divider type="vertical" />
                 <SubMenu className={checkAvailability(["19"]) ? "adtiveColor" : ""} title="SALUD MENTAL">
                     <ItemGroup >
                         <Item key="19">ORSM
@@ -95,7 +104,7 @@ export default function MenuTop() {
                         </Item>
                     </ItemGroup>
                 </SubMenu>
-
+                <Divider type="vertical" />
                 <Item key='20'>
                     <Link to={"/contact"}>
                         <span className="nav-text">CONTACTO</span>
@@ -128,7 +137,12 @@ export default function MenuTop() {
                         </Link>
                     </Item>
                 }
+              
+                  
             </Menu>
+           
         </div>
+         
+
     )
 }
