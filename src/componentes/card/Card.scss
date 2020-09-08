@@ -54,9 +54,14 @@ body{
   }
   
   .gallery .info{
+    
       position: absolute;
-      bottom: -35px;
+      bottom: -23px;
       width: 100%;
+      background-color: #00000085;
+
+
+     
   }
   
   .gallery .info h2 span{
@@ -64,6 +69,8 @@ body{
     display: block;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
     text-decoration:none;
+    font-weight: 600;
+
   }
   
   .gallery .info h2{
@@ -71,6 +78,7 @@ body{
       font-size: 18px;
     padding: 0 10px;
     font-weight: 400;
+    
   }
   
   .gallery .foot{
@@ -117,7 +125,7 @@ body{
   /* All hovers here! */
   .gallery:hover .info,
   .gallery:hover .foot{
-      bottom:10px;
+      bottom:1px;
   }
   
   .gallery:hover .overlay{
