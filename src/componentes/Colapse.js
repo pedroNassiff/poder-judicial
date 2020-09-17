@@ -6,20 +6,23 @@ import {
 } from "@ant-design/icons";
 import './Colapse.scss';
 import { Collapse } from 'antd';
+import Typography from '@material-ui/core/Typography';
+
 
 const { Panel } = Collapse;
 
 function Colapse() {
   return (
-    //Colapse
+    
 
     
 <div className="block featureBlock bgGray faqBlock">
   <div className="container-fluid">
+  
     <Row gutter={[16, 16]}>
     <Col span={8}>
             <Collapse className="ant-colapsed">
-                <Panel className="pcont" header="Defensorias Públicas y Civíles" key="1">
+                <Panel className="pcont" header="Defensorias Públicas Penales" key="1">
                     <Collapse>
                     <Panel className="pcont" header="Resistencia - 1ra Circunscripción" key="1">
                             <Row>
@@ -217,7 +220,7 @@ function Colapse() {
         </Col>
         <Col span={8}>
             <Collapse className="ant-colapsed">
-                <Panel className="pcont" header="Defensorias Públicas y Civíles" key="1">
+                <Panel className="pcont" header="Asesorías de Niñas, Niños y Adolecentes" key="1">
                     <Collapse>
                     <Panel className="pcont" header="Resistencia - 1ra Circunscripción" key="1">
                             <Row>
