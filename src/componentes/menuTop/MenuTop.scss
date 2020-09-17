@@ -58,7 +58,21 @@
 .nav-text{
     color: rgb(255, 255, 255);
 }
+
+//Ajustes Responsive
 .ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub{
     border: 1px solid white;
 }
 
+@media (max-width: 600px) {
+    
+
+
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-submenu{
+    margin-left: 8em;
+}
+
+.ant-divider-vertical{
+    display: none;
+}
+}

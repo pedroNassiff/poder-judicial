@@ -4,7 +4,12 @@ import { Row, Col, Avatar } from 'antd';
 import {
   PhoneOutlined,
 } from "@ant-design/icons";
-import './Grid.scss'
+import './Grid.scss';
+import { Collapse } from 'antd';
+
+
+
+const { Panel } = Collapse;
 
 const ComponentName = () => {
 
@@ -35,6 +40,8 @@ const ComponentName = () => {
         </div>
       </div>
     </div>
+
+
     /*  <Row justify="center">
        <Col span={8} xs={{ order: 1 }} sm={{ order: 2 }} md={{ order: 3 }} lg={{ order: 4 }}>
        <div className="bottomContainer" style={{ cursor: 'pointer' }}>
@@ -70,4 +77,7 @@ const ComponentName = () => {
   );
 };
 
+
+
 export default ComponentName;
+

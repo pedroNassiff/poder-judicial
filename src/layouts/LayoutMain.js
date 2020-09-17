@@ -3,7 +3,7 @@ import { Layout } from "antd";
 import LoadRoutes from "config/LoadRoutes";
 import MenuTop from "componentes/menuTop";
 import Whatsapp from 'componentes/whatsapp'
-
+import Colapse from 'componentes/Colapse';
 import "./LayoutMain.scss";
 
 export default function LayoutBasic(props) {
@@ -18,6 +18,7 @@ export default function LayoutBasic(props) {
         </div>
       </Content>
       <Whatsapp/>
+      <Colapse/>
       <Footer className="footerLayoutMain">©2020 Created by Somos 404</Footer>
     </Layout>
   );
